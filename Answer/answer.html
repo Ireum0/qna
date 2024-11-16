@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>답변하기 - 구미고 지식인</title>
+    <link rel="stylesheet" href="answer-styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>답변하기</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../Main/index.html">홈</a></li>
+                <li><a href="../Ask/ask.html">질문하기</a></li>
+                <li><a href="../About/about.html">도움말</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="answer-form">
+        <div class="container">
+            <h2 id="theme">질문 제목이 여기에 표시됩니다</h2>
+            <p id="content">질문 내용이 여기에 표시됩니다</p>
+            <!-- 질문 이미지가 표시될 영역 -->
+            <img id="question-image" style="max-width: 100%; display: none;">
+            <h3>답변 작성하기</h3>
+            <form id="answer-form">
+                <textarea id="answer-content" name="answer-content" rows="4" required></textarea><br><br>
+                <button id="submit">답변 등록하기</button>
+            </form>
+        </div>
+    </section>
+    <section id="latest-answers">
+        <div class="container">
+            <ul>
+                <!-- 답변이 보일 곳-->
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 구미고 지식인</p>
+        </div>
+    </footer>
+
+    <script src="answer.js"></script>
+</body>
+</html>
